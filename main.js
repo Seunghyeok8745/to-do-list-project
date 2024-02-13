@@ -21,6 +21,10 @@ function addToDo() {
   let taskInput = mainInput.value;
   toDoArray.push(taskInput);
   console.log(taskInput);
+  if (taskInput == '') {
+    alert(`Don't forget to do something :)`);
+    toDoArray.pop(taskInput);
+  }
   render();
 }
 

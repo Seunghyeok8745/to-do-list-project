@@ -26,6 +26,11 @@ body {
   color: white;
   width: 28px;
 }
+
+.input-area button:hover {
+  background-color: rgba(0, 128, 0, 0.769);
+  border: 1px solid rgba(0, 128, 0, 0.769);
+}
 .task-area {
   border: 1px solid lightgray;
   margin-top: 10px;
