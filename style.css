@@ -1,13 +1,14 @@
 body {
   margin: 0;
   background-image: url(./background.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
   min-height: 100vh;
+  font-size: 16px;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.931);
+  background-color: rgba(255, 255, 255, 0.863);
   min-height: 90vh;
   box-shadow: rgba(45, 55, 63, 0.48) 6px 2px 16px 0px,
     rgba(151, 150, 150, 0.8) -6px -2px 16px 0px;
@@ -16,20 +17,22 @@ body {
   width: 800px;
 }
 .input-area input {
-  width: 550px;
-  border: 1px solid green;
+  width: 500px;
+  border: 2px solid #3da5d9;
   margin-right: 7px;
 }
 .input-area button {
-  border: 1px solid green;
-  background-color: green;
+  border: 2px solid #3da5d9;
+  background-color: #3da5d9;
   color: white;
   width: 28px;
 }
 
 .input-area button:hover {
-  background-color: rgba(0, 128, 0, 0.769);
-  border: 1px solid rgba(0, 128, 0, 0.769);
+  background-color: #3da5d9ec;
+  border: 2px solid #3da5d9ec;
+  color: black;
+  transition: 0.2s ease-in;
 }
 .task-area {
   border: 1px solid lightgray;
@@ -49,7 +52,7 @@ body {
 
 #under-line {
   height: 4px;
-  background-color: green;
+  background-color: #3da5d9;
   width: 68px;
   position: absolute;
   left: 0px;
@@ -60,6 +63,51 @@ body {
 #task-list {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
   border-bottom: 1.5px solid lightgrey;
+}
+
+.task-done {
+  padding: 1em;
+  text-decoration: line-through;
+}
+.task-done2 {
+  padding: 1em;
+}
+i {
+  cursor: pointer;
+  margin: 0 25px;
+  font-size: 22px;
+}
+
+#check {
+  color: #17416f;
+  font-size: 23px;
+  margin-right: 40px;
+}
+#check:hover {
+  color: #3d6b9d;
+}
+#trash {
+  color: #ef2d56;
+  font-size: 22px;
+}
+#trash:hover {
+  color: #971a35;
+}
+#return {
+  font-size: 23px;
+  margin-right: 40px;
+  color: #17416f;
+}
+#return:hover {
+  color: #3d6b9d;
+}
+
+.transition {
+  background-color: skyblue;
+  color: white;
+}
+.button-container {
+  background-color: white;
+  padding: 1em;
 }
