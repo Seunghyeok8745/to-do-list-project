@@ -6,32 +6,75 @@ body {
   background-position: center top;
   min-height: 100vh;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: rgba(255, 255, 255, 0.953);
   min-height: 90vh;
   box-shadow: rgba(45, 55, 63, 0.48) 6px 2px 16px 0px,
-    rgba(151, 150, 150, 0.8) -6px -2px 16px 0px;
+    rgba(40, 40, 40, 0.8) -6px -2px 16px 0px;
   height: 100%;
-  min-height: 100vh;
-  width: 800px;
+  min-height: 110vh;
+  width: 750px;
+  padding: 50px 35px;
+  font-size: 16px;
+  margin: 60px 0;
+  border-radius: 15px;
+}
+.header {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-left: 20px;
+}
+.header h1 {
+  margin-right: -10px;
+  color: rgb(45, 15, 79);
+}
+.header i {
+  font-size: 40px;
+  padding-top: 5px;
+  color: rgb(45, 15, 79);
+  cursor: default;
+}
+.input-area {
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .input-area input {
-  width: 500px;
-  border: 2px solid #3da5d9;
-  margin-right: 7px;
+  width: 104.5%;
+  border: 2px solid rgb(45, 15, 79);
+  margin: 0;
+  border-radius: 22px;
+  height: 50px;
+}
+.input-area input[type='text'] {
+  padding: 20px;
+  letter-spacing: 1px;
 }
 .input-area button {
-  border: 2px solid #3da5d9;
-  background-color: #3da5d9;
+  border: 2px solid rgb(45, 15, 79);
+  background-color: rgb(45, 15, 79);
   color: white;
-  width: 28px;
+  width: 115px;
+  height: 50px;
+  border-radius: 0 22px 22px 0;
+  font-size: 16px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  letter-spacing: 1px;
 }
-
+.input-area input:hover {
+  border: 2px solid rgb(98, 35, 171);
+}
 .input-area button:hover {
-  background-color: #3da5d9ec;
-  border: 2px solid #3da5d9ec;
-  color: black;
+  background-color: rgb(98, 35, 171);
+  border: 2px solid rgb(98, 35, 171);
+  color: rgb(234, 234, 234);
   transition: 0.2s ease-in;
 }
 .task-area {
@@ -40,24 +83,36 @@ body {
 }
 
 .task-tabs {
+  position: relative;
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid lightgray;
-  position: relative;
-}
-.task-tabs div {
-  padding: 1em;
-  margin-right: 20px;
+  border-bottom: 1px solid rgb(45, 15, 79);
+  justify-content: space-around;
+  color: white;
+  background-color: rgb(45, 15, 79);
+  padding-bottom: 14px;
 }
 
-#under-line {
-  height: 4px;
-  background-color: #3da5d9;
-  width: 68px;
+.menu {
+  padding: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  height: 45px;
+}
+.menu:hover,
+.menu.active {
+  color: #ffffeb;
+}
+.under-line {
   position: absolute;
-  left: 0px;
-  top: 52px;
-  padding: 0px;
+  bottom: 0; /* .menu 아래로 위치 지정 */
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: white;
+  transition: left 0.3s ease;
 }
 
 #task-list {
@@ -68,10 +123,12 @@ body {
 
 .task-done {
   padding: 1em;
+  margin-left: 70px;
   text-decoration: line-through;
 }
 .task-done2 {
   padding: 1em;
+  margin-left: 70px;
 }
 i {
   cursor: pointer;
@@ -81,22 +138,22 @@ i {
 
 #check {
   color: #17416f;
-  font-size: 23px;
-  margin-right: 40px;
+  font-size: 20px;
+  margin-right: 20px;
 }
 #check:hover {
   color: #3d6b9d;
 }
 #trash {
   color: #ef2d56;
-  font-size: 22px;
+  font-size: 20px;
 }
 #trash:hover {
   color: #971a35;
 }
 #return {
-  font-size: 23px;
-  margin-right: 40px;
+  font-size: 20px;
+  margin-right: 20px;
   color: #17416f;
 }
 #return:hover {
@@ -104,10 +161,108 @@ i {
 }
 
 .transition {
-  background-color: skyblue;
+  background-color: #ed36aa;
   color: white;
+  transition: 0.3s ease-in;
 }
 .button-container {
   background-color: white;
-  padding: 1em;
+  margin-left: 50px;
+  padding: 1.1em;
+}
+.button-container i {
+  padding-left: 14px;
+}
+
+.task-tabs div {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .header h1 {
+    margin-right: -10px;
+    color: rgb(45, 15, 79);
+    font-size: 40px;
+  }
+
+  .header i {
+    font-size: 37px;
+    padding-top: 6px;
+    color: rgb(45, 15, 79);
+    cursor: default;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.953);
+    min-height: 95vh;
+    box-shadow: rgba(45, 55, 63, 0.48) 6px 2px 16px 0px,
+      rgba(40, 40, 40, 0.8) -6px -2px 16px 0px;
+    height: 100%;
+    min-height: 100vh;
+    width: 480px;
+    padding: 70px 30px;
+    font-size: 16px;
+    margin: 40px 0;
+    border-radius: 15px;
+  }
+
+  .input-area button {
+    border: 2px solid rgb(45, 15, 79);
+    background-color: rgb(45, 15, 79);
+    color: white;
+    width: 115px;
+    height: 50px;
+    border-radius: 0 22px 22px 0;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    letter-spacing: 1px;
+  }
+  .input-area input[type='text'] {
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  menu {
+    padding: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    height: 45px;
+  }
+  .under-line {
+    position: absolute;
+    bottom: 0; /* .menu 아래로 위치 지정 */
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: left 0.3s ease;
+  }
+  .task-done {
+    padding: 1em;
+    margin-left: 35px;
+    text-decoration: line-through;
+  }
+  .task-done2 {
+    padding: 1em;
+    margin-left: 35px;
+  }
+  .button-container {
+    background-color: white;
+    margin-left: 5px;
+  }
+  .button-container i {
+    padding-left: 0px;
+  }
 }
