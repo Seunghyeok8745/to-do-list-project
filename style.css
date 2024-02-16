@@ -66,7 +66,7 @@ body {
   position: absolute;
   top: 0px;
   right: -1px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .input-area input:hover {
   border: 2px solid rgb(98, 35, 171);
@@ -166,7 +166,7 @@ i {
   transition: 0.3s ease-in;
 }
 .button-container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.953);
   margin-left: 50px;
   padding: 1.1em;
 }
@@ -234,7 +234,7 @@ i {
   }
   .menu {
     padding: 0.7em;
-    padding-top: 17px;
+    padding-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
     letter-spacing: 1.5px;
@@ -259,16 +259,10 @@ i {
     margin-left: 35px;
   }
   .button-container {
-    background-color: white;
     margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.953);
   }
   .button-container i {
     padding-left: 0px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    width: 400px;
   }
 }
