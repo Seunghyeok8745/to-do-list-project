@@ -87,14 +87,16 @@ body {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid rgb(45, 15, 79);
-  justify-content: space-around;
+  justify-content: center;
   background-color: rgb(45, 15, 79);
   padding-bottom: 14px;
+  padding-right: 14em;
 }
 
 .menu {
   padding: 1em;
   margin-top: 10px;
+  margin-right: 18px;
   margin-bottom: 10px;
   font-size: 16px;
   letter-spacing: 1.5px;
@@ -137,12 +139,12 @@ i {
 }
 
 #check {
-  color: #17416f;
-  font-size: 20px;
+  color: green;
+  font-size: 21px;
   margin-right: 20px;
 }
 #check:hover {
-  color: #3d6b9d;
+  color: rgba(0, 128, 0, 0.581);
 }
 #trash {
   color: #ef2d56;
@@ -152,12 +154,12 @@ i {
   color: #971a35;
 }
 #return {
-  font-size: 20px;
+  font-size: 21px;
   margin-right: 20px;
-  color: #17416f;
+  color: rgb(131, 131, 131);
 }
 #return:hover {
-  color: #3d6b9d;
+  color: silver;
 }
 
 .transition {
@@ -166,9 +168,9 @@ i {
   transition: 0.3s ease-in;
 }
 .button-container {
-  background-color: rgba(255, 255, 255, 0.953);
+  background-color: rgb(255, 255, 255);
   margin-left: 50px;
-  padding: 1.1em;
+  padding: 1em;
 }
 .button-container i {
   padding-left: 14px;
@@ -233,12 +235,14 @@ i {
     font-size: 14px;
   }
   .menu {
-    padding: 0.7em;
+    padding: 0.3em;
     padding-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
     letter-spacing: 1.5px;
     height: 45px;
+    margin-right: 10px;
+    padding-right: 25px;
   }
   .under-line {
     position: absolute;
@@ -264,5 +268,8 @@ i {
   }
   .button-container i {
     padding-left: 0px;
+  }
+  .task-tabs {
+    padding-right: 4em;
   }
 }
