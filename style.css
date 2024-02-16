@@ -88,7 +88,6 @@ body {
   flex-direction: row;
   border-bottom: 1px solid rgb(45, 15, 79);
   justify-content: space-around;
-  color: white;
   background-color: rgb(45, 15, 79);
   padding-bottom: 14px;
 }
@@ -100,10 +99,11 @@ body {
   font-size: 16px;
   letter-spacing: 1.5px;
   height: 45px;
+  color: rgba(255, 255, 255, 0.306);
 }
 .menu:hover,
 .menu.active {
-  color: #ffffeb;
+  color: #ffffff;
 }
 .under-line {
   position: absolute;
@@ -232,20 +232,20 @@ i {
     letter-spacing: 1px;
     font-size: 14px;
   }
-  menu {
+  .menu {
     padding: 0.7em;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     height: 45px;
   }
   .under-line {
     position: absolute;
-    bottom: 0; /* .menu 아래로 위치 지정 */
+    bottom: 0;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 2px;
     background-color: white;
     transition: left 0.3s ease;
   }
@@ -264,5 +264,11 @@ i {
   }
   .button-container i {
     padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 400px;
   }
 }

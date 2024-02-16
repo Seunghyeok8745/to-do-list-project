@@ -45,6 +45,13 @@ function horizontalIndicator(e) {
 
 console.log(tabs);
 
+tabs.forEach((menu) => {
+  menu.addEventListener('click', function () {
+    tabs.forEach((tab) => tab.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
 function changeActive(clickedMenu) {
   document.querySelectorAll('.menu').forEach((menu) => {
     menu.classList.remove('active');
