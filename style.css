@@ -234,7 +234,7 @@ i {
   }
   .menu {
     padding: 0.7em;
-    margin-top: 10px;
+    padding-top: 17px;
     margin-bottom: 10px;
     font-size: 15px;
     letter-spacing: 1.5px;
@@ -267,8 +267,9 @@ i {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .container {
     width: 400px;
+    padding: 0 100px;
   }
 }
