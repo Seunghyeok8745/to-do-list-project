@@ -135,7 +135,8 @@ body {
 }
 i {
   cursor: pointer;
-  margin: 0 25px;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
   font-size: 22px;
 }
 
@@ -155,7 +156,7 @@ i {
   color: #971a35;
 }
 #return {
-  font-size: 21px;
+  font-size: 20px;
   margin-right: 20px;
   color: rgb(131, 131, 131);
 }
@@ -255,14 +256,13 @@ i {
   }
   .task-done {
     padding: 1em;
+    padding-right: 10px;
     font-size: 15px;
     margin-left: 10px;
-    margin-right: 5px;
     text-decoration: line-through;
   }
   .task-done2 {
     padding: 1em;
-    padding: 14.5px;
     margin-left: 10px;
   }
   .button-container {
@@ -277,12 +277,18 @@ i {
 }
 @media screen and (max-width: 550px) {
   .task-tabs {
-    padding-right: 7em;
+    padding-right: 3.5em;
   }
   .transition {
     overflow-wrap: break-word;
   }
   .menu {
-    font-size: 13px;
+    font-size: 13.5px;
+  }
+  i {
+    cursor: pointer;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 17px;
   }
 }
