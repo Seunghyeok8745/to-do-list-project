@@ -236,10 +236,10 @@ i {
     font-size: 14px;
   }
   .menu {
-    padding: 0.3em;
+    padding: 0.5em;
     padding-top: 15px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 1.5px;
     height: 45px;
     margin-right: 12px;
@@ -255,21 +255,22 @@ i {
   }
   .task-done {
     padding: 1em;
+    font-size: 14.5px;
     margin-left: 35px;
     text-decoration: line-through;
   }
   .task-done2 {
     padding: 1em;
+    padding: 14.5px;
     margin-left: 35px;
   }
   .button-container {
     margin-left: 5px;
   }
   .button-container i {
-    padding-left: 0px;
+    padding-left: 5px;
   }
   .task-tabs {
-    font-size: 13px;
-    padding-right: 5em;
+    padding-right: 6em;
   }
 }
