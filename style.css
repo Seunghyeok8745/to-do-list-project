@@ -262,11 +262,14 @@ i {
     padding: 1em;
     margin-left: 35px;
   }
+  .button-container {
+    margin-left: 5px;
+  }
   .button-container i {
     padding-left: 0px;
   }
   .task-tabs {
-    padding-right: 4em;
-    font-size: 14px;
+    font-size: 13px;
+    padding-right: 5em;
   }
 }
