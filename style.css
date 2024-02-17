@@ -239,7 +239,7 @@ i {
     padding: 0.5em;
     padding-top: 15px;
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 14.5px;
     letter-spacing: 1.5px;
     height: 45px;
     margin-right: 12px;
@@ -255,22 +255,34 @@ i {
   }
   .task-done {
     padding: 1em;
-    font-size: 14.5px;
-    margin-left: 35px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
     text-decoration: line-through;
   }
   .task-done2 {
     padding: 1em;
     padding: 14.5px;
-    margin-left: 35px;
+    margin-left: 10px;
   }
   .button-container {
-    margin-left: 5px;
+    margin-left: -10px;
   }
   .button-container i {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .task-tabs {
-    padding-right: 6em;
+    padding-right: 7em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .task-tabs {
+    padding-right: 7em;
+  }
+  .transition {
+    overflow-wrap: break-word;
+  }
+  .menu {
+    font-size: 13px;
   }
 }
