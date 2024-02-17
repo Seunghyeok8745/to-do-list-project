@@ -262,14 +262,11 @@ i {
     padding: 1em;
     margin-left: 35px;
   }
-  .button-container {
-    margin-left: 5px;
-    background-color: rgba(255, 255, 255, 0.953);
-  }
   .button-container i {
     padding-left: 0px;
   }
   .task-tabs {
-    padding-right: 7em;
+    padding-right: 6.5em;
+    font-size: 14px;
   }
 }
