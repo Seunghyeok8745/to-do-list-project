@@ -97,7 +97,7 @@ function render() {
   </div>
   </div>`;
     } else {
-      resultHTML += `<div id="task-list">
+      resultHTML += `<div id="task-list" class="transition2">
     <div class= "task-done2">${list[i].taskInput}</div>
     <div class="button-container">
     <i class="fa-solid fa-check" id = "check" onclick="toggleComplete('${list[i].id}')"></i>
