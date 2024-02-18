@@ -280,7 +280,7 @@ i {
 }
 @media screen and (max-width: 500px) {
   .task-tabs {
-    padding-right: 6em;
+    padding-right: 5em;
   }
   .transition {
     overflow-wrap: break-word;
