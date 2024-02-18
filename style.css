@@ -128,12 +128,14 @@ body {
   padding: 1em;
   margin-left: 70px;
   font-size: 16px;
+  letter-spacing: 2px;
   text-decoration: line-through;
 }
 .task-done2 {
   padding: 1em;
   font-size: 16px;
   margin-left: 70px;
+  letter-spacing: 2px;
   color: rgb(45, 15, 79);
 }
 i {
@@ -185,7 +187,7 @@ i {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .header {
     display: flex;
     margin-bottom: 40px;
@@ -266,7 +268,7 @@ i {
   }
   .task-done2 {
     padding: 1em;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .button-container {
     margin-left: -10px;
@@ -278,15 +280,17 @@ i {
     padding-right: 7em;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 985px) {
   .task-tabs {
-    padding-right: 6em;
+    padding-right: 11em;
+    font-size: 15px;
   }
   .transition {
     overflow-wrap: break-word;
   }
   .menu {
     font-size: 13.5px;
+    margin-right: 10px;
   }
   i {
     cursor: pointer;
@@ -295,11 +299,11 @@ i {
     font-size: 17px;
   }
   .task-done .task-done2 {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 400px) {
   .task-tabs {
-    padding-right: 3.5em;
+    padding-right: 4em;
   }
 }
