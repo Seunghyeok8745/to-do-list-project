@@ -129,6 +129,7 @@ body {
   margin-left: 70px;
   font-size: 16px;
   letter-spacing: 2px;
+  padding-top: 4px;
   text-decoration: line-through;
 }
 .task-done2 {
@@ -136,6 +137,7 @@ body {
   font-size: 16px;
   margin-left: 70px;
   letter-spacing: 2px;
+  padding-top: 4px;
   color: rgb(45, 15, 79);
 }
 i {
@@ -173,11 +175,9 @@ i {
   background-color: #ed36aa;
   color: white;
   transition: 0.3s ease-in;
-  padding-top: 5px;
 }
 .transition2 {
   background-color: rgba(239, 239, 239, 0.885);
-  padding-top: 5px;
 }
 .button-container {
   background-color: rgb(255, 255, 255);
@@ -307,7 +307,7 @@ i {
     font-size: 17px;
   }
   .task-done .task-done2 {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 400px) {
