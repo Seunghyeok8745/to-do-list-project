@@ -280,7 +280,7 @@ i {
 }
 @media screen and (max-width: 500px) {
   .task-tabs {
-    padding-right: 5em;
+    padding-right: 6em;
   }
   .transition {
     overflow-wrap: break-word;
@@ -296,5 +296,10 @@ i {
   }
   .task-done .task-done2 {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .task-tabs {
+    padding-right: 3.5em;
   }
 }
