@@ -10,7 +10,7 @@ body {
   justify-content: center;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.953);
+  background-color: rgba(255, 255, 255, 0.935);
   min-height: 90vh;
   box-shadow: rgba(45, 55, 63, 0.48) 6px 2px 16px 0px,
     rgba(40, 40, 40, 0.8) -6px -2px 16px 0px;
@@ -127,11 +127,14 @@ body {
 .task-done {
   padding: 1em;
   margin-left: 70px;
+  font-size: 16px;
   text-decoration: line-through;
 }
 .task-done2 {
   padding: 1em;
+  font-size: 16px;
   margin-left: 70px;
+  color: rgb(45, 15, 79);
 }
 i {
   cursor: pointer;
@@ -204,7 +207,7 @@ i {
   }
 
   .container {
-    background-color: rgba(255, 255, 255, 0.953);
+    background-color: rgba(255, 255, 255, 0.935);
     min-height: 95vh;
     box-shadow: rgba(45, 55, 63, 0.48) 6px 2px 16px 0px,
       rgba(40, 40, 40, 0.8) -6px -2px 16px 0px;
@@ -277,7 +280,7 @@ i {
 }
 @media screen and (max-width: 500px) {
   .task-tabs {
-    padding-right: 3em;
+    padding-right: 6em;
   }
   .transition {
     overflow-wrap: break-word;
@@ -290,5 +293,8 @@ i {
     margin-left: 0.5em;
     margin-right: 0.5em;
     font-size: 17px;
+  }
+  .task-done .task-done2 {
+    font-size: 13px;
   }
 }
